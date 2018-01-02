@@ -1,4 +1,9 @@
-class Dallar {
+// @flow
+
+class Dollar {
+  amount: number
+  constructor(amout: number)
+  times(multiplier) {}
 }
 
-export default Dallar
+export default Dollar
