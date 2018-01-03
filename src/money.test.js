@@ -1,7 +1,7 @@
-import Dallar from './dallar'
+import Dollar from './dollar'
 
-test('Dallar five', () => {
-  const five = new Dallar()
+test('Dollar five', () => {
+  const five = new Dollar()
   five.times(2)
-  expect((five.amout).toBe(10))
+  expect((five.amount).toBe(10))
 })
