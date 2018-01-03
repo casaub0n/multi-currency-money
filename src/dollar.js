@@ -8,7 +8,8 @@ class Dollar {
   }
 
   times(multiplier: number) {
-    return new Dollar(this.amount *= multiplier)
+    const a = new Dollar(this.amount *= multiplier)
+    return a
   }
 }
 
