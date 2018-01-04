@@ -3,12 +3,13 @@
 class Dollar {
   amount: number
 
-  constructor(amout: number) {
-    this.amount = amout
+  constructor(amount: number) {
+    this.amount = amount
   }
 
   times(multiplier: number) {
-    this.amount *= multiplier
+    const a = new Dollar(this.amount * multiplier)
+    return a
   }
 }
 
