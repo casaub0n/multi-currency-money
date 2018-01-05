@@ -8,3 +8,8 @@ test('Dollar five', () => {
   product = five.times(3)
   expect(product.amount).toBe(15)
 })
+
+test('Equality test', () => {
+  const e = new Dollar(5)
+  expect(e.equals(new Dollar(5)))
+})
