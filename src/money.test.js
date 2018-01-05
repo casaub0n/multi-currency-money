@@ -1,12 +1,9 @@
 import Dollar from './dollar'
 
-test('Dollar five', () => {
+test('Multiplication five', () => {
   const five = new Dollar(5)
-  let product = new Dollar()
-  product = five.times(2)
-  expect(product.amount).toBe(10)
-  product = five.times(3)
-  expect(product.amount).toBe(15)
+  expect(five.times(2)).toBe(new Dollar(10))
+  expect(five.times(3)).toBe(new Dollar(15))
 })
 
 test('Equality test', () => {
