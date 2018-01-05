@@ -7,6 +7,5 @@ test('Multiplication five', () => {
 })
 
 test('Equality test', () => {
-  const e = new Dollar(5)
-  expect(e.equals(new Dollar(5)))
+  expect(new Dollar(5).equals(new Dollar(5))).toBeTruthy()
 })
