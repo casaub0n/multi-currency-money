@@ -8,4 +8,5 @@ test('Multiplication five', () => {
 
 test('Equality test', () => {
   expect(new Dollar(5).equals(new Dollar(5))).toBeTruthy()
+  expect(new Dollar(5).equals(new Dollar(6))).toBeFalsy()
 })
