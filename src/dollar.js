@@ -8,8 +8,11 @@ class Dollar {
   }
 
   times(multiplier: number) {
-    const a = new Dollar(this.amount * multiplier)
-    return a
+    return new Dollar(this.amount * multiplier)
+  }
+
+  equals(object: any) {
+    return this.amount === object.amount
   }
 }
 
