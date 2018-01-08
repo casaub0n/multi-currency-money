@@ -1,5 +1,6 @@
 // @flow
 
+// スイスフラン
 class Franc {
   amount: number
 
