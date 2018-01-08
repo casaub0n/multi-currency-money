@@ -12,7 +12,6 @@ test('Equality test', () => {
   expect(new Dollar(5).equals(new Dollar(6))).toBeFalsy()
 })
 
-// スイスフランのテスト
 test('Franc Multiplication test', () => {
   const five = new Franc(5)
   expect(five.times(2)).toEqual(new Franc(10))
