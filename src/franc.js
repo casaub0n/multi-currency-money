@@ -1,3 +1,7 @@
+/**
+ * Franc :
+ *  スイスフランのクラス
+ */
 // @flow
 
 class Franc {

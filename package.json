@@ -4,7 +4,9 @@
   "repository": "git@github.com:casaub0n/multi-currency-money.git",
   "author": "Casaubon <netzach.yoshida@gmail.com>",
   "license": "MIT",
-  "browserslist": ["> 1%"],
+  "browserslist": [
+    "> 1%"
+  ],
   "scripts": {
     "start": "babel-node src",
     "test": "eslint src && flow && jest --coverage"
