@@ -1,12 +1,7 @@
 // @flow
+import Money from './money'
 
-class Dollar {
-  amount: number
-
-  constructor(amount: number) {
-    this.amount = amount
-  }
-
+class Dollar extends Money {
   times(multiplier: number) {
     return new Dollar(this.amount * multiplier)
   }
