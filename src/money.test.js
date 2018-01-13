@@ -1,6 +1,3 @@
-/**
- * money test
- */
 import Dollar from './dollar'
 import Franc from './franc'
 
