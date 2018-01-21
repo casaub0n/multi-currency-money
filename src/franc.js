@@ -1,22 +1,14 @@
-/**
- * Franc :
- *  スイスフランのクラス
- */
 // @flow
+import Money from './money'
 
-class Franc {
-  amount: number
-
+class Franc extends Money {
   constructor(amount: number) {
+    super()
     this.amount = amount
   }
 
   times(multiplier: number) {
     return new Franc(this.amount * multiplier)
-  }
-
-  equals(object: any) {
-    return this.amount === object.amount
   }
 }
 
