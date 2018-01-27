@@ -2,9 +2,13 @@
 
 class Money {
   amount: number
-  equals(object: any) {
-    const money: Money = (object: Money)
-    return this.amount === money.amount
+
+  equals(object: ?Money): boolean {
+    if (object !== null && object !== undefined) {
+      const money: Money = (object: Money)
+      return this.amount === money.amount
+    }
+    return false
   }
 }
 
