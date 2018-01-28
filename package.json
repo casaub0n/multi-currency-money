@@ -17,7 +17,6 @@
     "babel-jest": "^22.0.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
-    "codecov": "^3.0.0",
     "eslint": "^4.14.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-compat": "^2.1.0",
