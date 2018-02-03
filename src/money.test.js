@@ -17,3 +17,7 @@ test('Franc Multiplication test', () => {
   expect(five.times(2)).toEqual(new Franc(10))
   expect(five.times(3)).toEqual(new Franc(15))
 })
+
+// test('＄とフランの価値が間違っているかのテスト', () => {
+//   expect(new Franc(5).equals(new Dollar(5))).toBeFalsy()
+// })

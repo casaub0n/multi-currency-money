@@ -3,12 +3,9 @@
 class Money {
   amount: number
 
-  equals(object: ?Money): boolean {
-    if (object !== null && object !== undefined) {
-      const money: Money = (object: Money)
-      return this.amount === money.amount
-    }
-    return false
+  equals(object: Money): boolean {
+    const money: Money = object
+    return this.amount === money.amount
   }
 }
 
