@@ -1,5 +1,6 @@
 // @flow
 import Dollar from './dollar'
+import Franc from './franc'
 
 class Money {
   amount: number
@@ -12,6 +13,10 @@ class Money {
 
   static dollar(amount: number): Dollar {
     return new Dollar(amount)
+  }
+
+  static franc(amount: number): Franc {
+    return new Franc(amount)
   }
 }
 
