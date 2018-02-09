@@ -9,10 +9,10 @@ test('Multiplication', () => {
 })
 
 test('Equality test', () => {
-  expect(Money.dollar(5).equals(Money.dollar(5))).toBeTruthy()
-  expect(Money.dollar(5).equals(Money.dollar(6))).toBeFalsy()
-  expect(Money.franc(5).equals(Money.franc(5))).toBeTruthy()
-  expect(Money.franc(5).equals(Money.franc(6))).toBeFalsy()
+  expect(Money.dollar(5).franc(5).equals(Money.dollar(5).franc(5))).toBeTruthy()
+  expect(Money.dollar(5).franc(5).equals(Money.dollar(6).franc(6))).toBeFalsy()
+  expect(Money.franc(5).dollar(5).equals(Money.franc(5).dollar(5))).toBeTruthy()
+  expect(Money.franc(5).dollar(5).equals(Money.franc(6).dollar(6))).toBeFalsy()
 })
 
 test('Franc Multiplication test', () => {
