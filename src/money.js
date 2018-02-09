@@ -11,12 +11,14 @@ class Money {
     return this.amount === money.amount
   }
 
-  static dollar(amount: number): Dollar {
-    return new Dollar(amount)
+  static dollar(amount: ?number): Dollar {
+    if (amount != null) return new Dollar(amount)
+    return new Dollar(0)
   }
 
-  static franc(amount: number): Franc {
-    return new Franc(amount)
+  static franc(amount: ?number): Franc {
+    if (amount != null) return new Franc(amount)
+    return new Franc(0)
   }
 }
 
