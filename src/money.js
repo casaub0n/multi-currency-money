@@ -1,6 +1,6 @@
 // @flow
 import Dollar from './dollar'
-// import Franc from './franc'
+import Franc from './franc'
 
 class Money {
   amount: number
@@ -15,9 +15,9 @@ class Money {
     return new Dollar(amount)
   }
 
-  // static franc(amount: number): Franc {
-  //   return new Franc(amount)
-  // }
+  static franc(amount: number): Franc {
+    return new Franc(amount)
+  }
 }
 
 export default Money
