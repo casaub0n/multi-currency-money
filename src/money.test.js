@@ -1,6 +1,6 @@
+import Money from './money'
 import Dollar from './dollar'
 import Franc from './franc'
-import Money from './money'
 
 test('Multiplication', () => {
   const five = Money.dollar(5)
